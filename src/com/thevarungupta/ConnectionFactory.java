@@ -8,7 +8,7 @@ public class ConnectionFactory {
 
     public static Connection getConnection() throws SQLException {
         if(con ==null){
-            ResourceBundle bundle = ResourceBundle.getBundle("JDBCDemo/dbConfig");
+            ResourceBundle bundle = ResourceBundle.getBundle("com/thevarungupta/dbConfig");
             String dc = bundle.getString("driverClass");
             String url = bundle.getString("url");
             String username = bundle.getString("username");
